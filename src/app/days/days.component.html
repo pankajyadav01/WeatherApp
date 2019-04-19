@@ -1,0 +1,24 @@
+<div class="container" id={{currweather}} style='width: inherit;
+border-radius: 15px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.19), 0 4px 10px 0 rgba(0,0,0,0.20);'>
+
+  
+  <div>
+    
+    <div class="seven-day">
+      <div class="seven-day-fc">
+        <div class="date">{{day}}</div>
+        <div class="icon">
+          <img *ngIf="iconUrl" [src]='iconUrl' style="width: inherit">
+        </div>
+        <div class="seven-day-temp">
+        <div class="temp-high">{{maxTemp}}&deg;</div>
+        <div class="temp-low">{{minTemp}}&deg;</div>
+      </div>
+      <div class="pcount">{{pollen}}</div>
+    </div>
+  </div>
+  
+</div>
+</div>
+<br>

@@ -1,0 +1,101 @@
+
+.pollen:before {
+    content: "Status: ";
+    color: #888;
+  }
+  
+  .pcount:before {
+    content: "Status      ";
+    color: #888;
+  }
+  
+  .weather-forecast {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    display: inline-block;
+  }
+  /* Seven Day Forecast */
+  
+  .seven-day div {
+    vertical-align: middle;
+  }
+  
+  .seven-day-fc {
+    /* border-top: 1px solid rgba(0,0,0,0.2); */
+    margin: 0 -11px -1px -11px;
+    padding: 10px;
+  }
+  
+  .seven-day-fc:last-of-type {
+    /* border-bottom: 1px solid rgba(0,0,0,0.2); */
+  }
+  
+  .seven-day-fc div {
+    display: inline-block;
+  }
+  
+  .seven-day-fc .date {
+    font-weight: bold;
+    color: #444;
+    width: 30%;
+  }
+  
+  .seven-day-fc .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .seven-day-fc .seven-day-temp {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .seven-day-fc .temp-high {
+    color: #444;
+  
+  }
+  
+  .seven-day-fc .temp-low {
+    color: #888;
+  }
+  
+  .seven-day-fc .temp-low,
+  .seven-day-fc .temp-high {
+    display: block;
+  }
+  
+  .seven-day-fc .pcount {
+    text-align: center;
+    width: 16%;
+  }
+
+  #rainy{
+    background-image: linear-gradient(to right,#bdf9b7, #9abdeb);
+  }
+
+  #cloudy{
+    background-image: linear-gradient(to right,#88fcfe, #64a1ff);
+  }
+
+  #sunny{
+    background-image: linear-gradient( to right,#fe9c88,#f5d961);
+  }
+
+  #default{
+    background-image: linear-gradient(to right,#fffcfc,#eaeded );
+  }
+  #rainy:hover{
+    background-image: linear-gradient(to left,#bdf9b7, #9abdeb);
+  }
+
+  #cloudy:hover{
+    background-image: linear-gradient(to left,#88fcfe, #64a1ff);
+  }
+
+  #sunny:hover{
+    background-image: linear-gradient( to left,#fe9c88,#f5d961);
+  }
+
+  #default:hover{
+    background-image: linear-gradient(to left,#fffcfc,#eaeded );
+  }

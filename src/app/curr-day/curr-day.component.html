@@ -1,0 +1,24 @@
+<div class="container" [id]="currweather"  style='width: inherit;
+border-radius: 15px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19), 0 8px 20px 0 rgba(0,0,0,0.20);'>
+  <div class="newBody"></div>
+  <div class="weather-forecast" role="main">
+    <div class="location">{{currLoc}}</div>
+    <div class="date">{{currdate}}</div>
+    <div class="desc">{{weatherDesc}}</div>
+    <div class="current">
+      <div class="visual">
+        <div class="icon">
+          <img *ngIf="iconUrl" [src]='iconUrl' style="width: inherit">
+        </div>
+        <div class="temp">{{currTemp}}</div>
+        <div class="scale">&deg;C</div>
+      </div>
+    <div class="description">
+      <div class="precip">{{pressuse}}Pa</div>
+      <div class="humidity">{{humidity}}%</div>
+      <div class="wind">{{wind}}&deg;</div>
+    </div>
+  </div>
+</div>
+</div>

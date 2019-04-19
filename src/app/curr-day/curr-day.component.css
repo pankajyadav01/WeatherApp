@@ -1,0 +1,302 @@
+input{
+    border: transparent;
+    border-bottom: solid 2px aqua;
+  }
+  imput:hover{
+    border-bottom: solid 2px springgreen;  
+  }
+  .newbody {
+      font-family: Roboto, Arial;
+      font-size: 0.8em;
+      color: #666;
+      overflow-y: hidden;
+    }
+    
+    .icon {
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      background-size: contain;
+    }
+    
+    .weather-forecast {
+      width: 100%;
+      padding: 10px 10px 0 10px;
+      display: inline-block;
+    }
+    
+    /* Header row */
+    
+    .location {
+      font-size: 3em;
+      color: #444;
+    }
+    
+    /* Current Weather Summary */
+    .current {
+      overflow: auto;
+      width:100%;
+      margin-bottom: 15px;
+    }
+    
+    .current .visual {
+      width: 55%;
+      float: left;
+    }
+    
+    .current .description {
+      width: 45%;
+      float: left;
+    }
+    
+    /* Current Weather - Visual */
+    
+    .visual .icon {
+      width: 64px;
+      height: 64px;
+    }
+    
+    .temp {
+      font-size: 2.5em;
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    .scale {
+      vertical-align: top;
+      display: inline-block;
+      margin-top: 6px;
+      color: #888;
+    }
+    
+    /* General Labels */
+    
+    .wind:before {
+      content: "Wind: ";
+      color: #888;
+    }
+    
+    .precip:before {
+      content: "Pressure: ";
+      color: #888;
+    }
+    
+    .humidity:before {
+      content: "Humidity: ";
+      color: #888;
+    }
+    
+    .pollen:before {
+      content: "Pollen Count: ";
+      color: #888;
+    }
+    
+    .pcount:before {
+      content: "Pollen ";
+      color: #888;
+    }
+    
+    
+    /* Seven Day Forecast */
+    
+    .seven-day div {
+      vertical-align: middle;
+    }
+    
+    .seven-day-fc {
+      border-top: 1px solid rgba(0,0,0,0.2);
+      margin: 0 -11px -1px -11px;
+      padding: 10px;
+    }
+    
+    .seven-day-fc:last-of-type {
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    
+    .seven-day-fc div {
+      display: inline-block;
+    }
+    
+    .seven-day-fc .date {
+      font-weight: bold;
+      color: #444;
+      width: 30%;
+    }
+    
+    .seven-day-fc .icon {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .seven-day-fc .seven-day-temp {
+      text-align: center;
+      width: 30%;
+    }
+    
+    .seven-day-fc .temp-high {
+      color: #444;
+    
+    }
+    
+    .seven-day-fc .temp-low {
+      color: #888;
+    }
+    
+    .seven-day-fc .temp-low,
+    .seven-day-fc .temp-high {
+      display: block;
+    }
+    
+    .seven-day-fc .pcount {
+      text-align: center;
+      width: 16%;
+    }
+  
+    #contact {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+    }
+    #contact main, body footer {
+      width: 100%;
+    }
+    #contact main {
+      height: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    
+    .form .text-input, .form .textarea, .form .label, .form .button {
+      padding: 1em 1.5em;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      outline: none;
+      line-height: normal;
+      border: 1px solid transparent;
+      border-radius: 0;
+    }
+    
+    .form .text-input, .form .textarea {
+      font: inherit;
+      line-height: normal;
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+      padding-left: 0;
+      border-bottom-color: #00d2ff;
+      background: transparent;
+      outline: none;
+      color: black;
+    }
+    .form .text-input:placeholder, .form .textarea:placeholder {
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .form .text-input:-webkit-autofill, .form .textarea:-webkit-autofill {
+      box-shadow: 0 0 0px 1000px white inset;
+      border-top-color: white;
+      border-left-color: white;
+      border-right-color: white;
+    }
+    .form .error.text-input, .form .error.textarea, .error .form .text-input, .form .error .text-input, .error .form .textarea, .form .error .textarea {
+      border-color: transparent transparent red transparent;
+    }
+    .form:not(.has-floated-label) .text-input:active, .form:not(.has-floated-label) .textarea:active, .form:not(.has-floated-label) .text-input:focus, .form:not(.has-floated-label) .textarea:focus {
+      border-color: transparent transparent black transparent;
+    }
+    
+    .active .form .label, .form .active .label {
+      font-size: 0.80em;
+      line-height: 1;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0;
+      color: rgba(0, 0, 0, 0.7);
+      background: white;
+    }
+    .focus .form .label, .form .focus .label {
+      color: black;
+    }
+    
+    .form.has-floated-label .field:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 3px solid #00d2ff;
+      -webkit-transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+    
+    .form.has-floated-label .field.focus:after {
+      width: 100%;
+    }
+    
+    #currWeather{
+      background: aqua;
+      
+    }
+
+    #rainy{
+      background-image: linear-gradient(to left,#bdf9b7, #9abdeb);
+    }
+
+    #cloudy{
+      background-image: linear-gradient(to left,#88fcfe, #64a1ff);
+    }
+
+    #sunny{
+      background-image: linear-gradient( to left,#fe9c88,#f5d961);
+    }
+
+    #default{
+      background-image: linear-gradient(to left,#fffcfc,#eaeded );
+    }
+    #rainy:hover{
+      background-image: linear-gradient(to right,#bdf9b7, #9abdeb);
+    }
+  
+    #cloudy:hover{
+      background-image: linear-gradient(to right,#88fcfe, #64a1ff);
+    }
+  
+    #sunny:hover{
+      background-image: linear-gradient( to right,#fe9c88,#f5d961);
+    }
+  
+    #default:hover{
+      background-image: linear-gradient(to right,#fffcfc,#eaeded );
+    }
+    
+    .form {
+    /*  max-width: 50em; */
+      width: 100%;
+      margin: 0 10%;
+    /*  padding: 1em 2em;  */
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .form .field {
+      position: relative;
+      width: 100%;
+      margin-bottom: 1.5em;
+      float: left;
+      
+    }
+    .form .field:last-child {
+      float: inherit;
+      margin: auto;
+      width: 300px;
+    }
