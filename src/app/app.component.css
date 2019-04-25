@@ -6,7 +6,6 @@ imput:hover{
   border-bottom: solid 2px springgreen;  
 }
 .newbody {
-    font-family: Roboto, Arial;
     font-size: 0.8em;
     color: #666;
     overflow-y: hidden;
@@ -161,7 +160,6 @@ imput:hover{
   }
 
   #contact {
-    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 3px;
@@ -196,7 +194,7 @@ imput:hover{
   }
   
   .form .text-input, .form .textarea {
-    font: inherit;
+    
     line-height: normal;
     width: 100%;
     box-sizing: border-box;
